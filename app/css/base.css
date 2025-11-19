@@ -1,0 +1,152 @@
+/* CONTAINER PRINCIPAL */
+.home-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* TÍTULO IGUAL AO PNG */
+.titulo-principal {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #1e1e1c;
+    margin-bottom: 10px;
+}
+
+/* LINHA IGUAL AO MODELO */
+.linha-decorativa {
+    width: 400px;
+    height: 2px;
+    background: #3a382f;
+    margin: 0 auto 40px auto;
+}
+
+/* DESCRIÇÃO */
+.descricao-home {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    color: #44423c;
+    margin-top: 10px;
+}
+
+/* MENU GERAL */
+header nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+/* LINKS DO MENU */
+.menu-list li a {
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #2d2b29;
+    transition: 0.2s ease;
+}
+
+.menu-list li a:hover {
+    opacity: 0.6;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    color: #4d4b45;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #C8BFB2;
+    margin-top: 40px;
+}
+
+body {
+    background-color: #F4E9D8; /* seu bege/amarelo */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* a letra bonitinha */
+  }
+  
+  /* Linha embaixo do header */
+  .header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  /* ---- ESTILO GLOBAL ---- */
+body {
+    background-color: #F2EEDF; /* bege clarinho da imagem */
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant Garamond", serif;
+  }
+  /* ---- HEADER ---- */
+header {
+    background-color: #F2EEDF;
+    border-bottom: 1.5px solid #c8c1b1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav {
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0;   /* AUMENTEI o padding vertical */
+  }
+  
+  /* Logo GlowSkin */
+  .logo {
+    font-size: 34px;     /* um pouquinho maior */
+    font-weight: 500;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;           /* mais espaçamento do ✦ */
+  }
+  
+  /* Itens do menu */
+  .menu-links {
+    display: flex;
+    gap: 70px;           /* AUMENTEI bastante, igual ao PNG */
+  }
+  
+  .menu-links a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+  }
+  
+  /* Barra de pesquisa */
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: #f9f3ed;
+    border: 1.5px solid #c8c1b1;
+    border-radius: 30px;
+    padding: 10px 22px;  /* aumentei */
+    font-size: 19px;
+  }
+  
+  .search-box input {
+    width: 180px;        /* aumentei */
+    font-size: 19px;
+  }
+
+  .star {
+    color: #E6A8AF;  /* rosinha do PNG */
+    font-size: 30px;
+  }
+  
