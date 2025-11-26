@@ -1,5 +1,6 @@
 import { Cliente } from "../../database/tables";
 import {redirect} from 'next/navigation';
+import "../css/listagem.css";
 
 async function removeCli (formData){
     "use server";
@@ -41,13 +42,13 @@ async function Clientes (){
                                     <td>
                                     <form action={'/clientes/edita'}>
                                             <input type="hidden" name="id" defaultValue={fill.id}/>
-                                            <button>Editar</button>
+                                            <button name= "editar">&#9998;</button>
                                         </form>
                                     </td>
                                     <td>
                                         <form action={removeCli}>
                                             <input type="hidden" name="id" defaultValue={fill.id}/>
-                                            <button>Excluir</button>
+                                            <button nama= "excluir">&#10008;</button>
                                         </form>
 
                                     </td>

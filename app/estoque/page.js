@@ -1,5 +1,7 @@
 import { Estoque } from "../../database/tables";
 import {redirect} from 'next/navigation';
+import "../css/listagem.css";
+
 
 async function removeEst (formData){
     "use server";
@@ -38,6 +40,12 @@ async function Estoques (){
                                     <td>{fill.ProdutoId}</td>
                                     <td>{fill.Quantidade}</td>
                                     <td>{fill.Local}</td>
+                                    <td>
+                                    <form action={'/estoque/edita'}>
+                                            <input type="hidden" name="id" defaultValue={fill.id}/>
+                                            <button name= "editar">&#9998;</button>
+                                        </form>
+                                    </td>
                                     <td>
                                         <form action={removeEst}>
                                             <input type="hidden" name="id" defaultValue={fill.id}/>

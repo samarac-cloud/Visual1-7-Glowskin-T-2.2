@@ -1,0 +1,29 @@
+main{
+    padding: 10px;
+}
+
+form{
+    width: 70%;
+    margin: auto;  
+    background-color: rgb(226, 177, 185);
+    margin-top: 5px;
+    padding: 20px;
+}
+input {
+    font-size: 14px;
+    min-width: 400px;
+    padding: 5px;
+}
+
+buttom{
+    background-color: rgb(226, 177, 185);
+    border: 0.1px rgb(146, 39, 55);
+    padding: 5px;
+    /*margin-top: 3px;*/
+    font-size: 16px;
+    border-radius: 5px;
+    &:hover{ background-color: rgb(146, 39, 55);
+    
+    }
+}
+

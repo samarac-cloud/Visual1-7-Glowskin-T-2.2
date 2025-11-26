@@ -1,5 +1,7 @@
 import { Feedback } from "../../database/tables";
 import {redirect} from 'next/navigation';
+import "../css/listagem.css";
+
 
 async function removeFb (formData){
     "use server";
