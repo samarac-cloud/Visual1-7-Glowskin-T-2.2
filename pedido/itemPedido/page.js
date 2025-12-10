@@ -1,22 +1,22 @@
-import { Cliente } from "../../database/tables";
+import { itemPedido } from "../../database/tables";
 import {redirect} from 'next/navigation';
 import "../css/listagem.css";
 
-async function removeCli (formData){
+async function removeIP (formData){
     "use server";
     const id = formData.get('id');
-    const idExc = await Cliente.findByPk(id);
+    const idExc = await itemPedido.findByPk(id);
     await idExc.destroy();
-    redirect('/clientes');
+    redirect('/itemPedido');
 }
 
-async function Clientes (){
-    const cli = await Cliente.findAll();
+async function itemPedido (){
+    const IPed = await itemPedido.findAll();
     return (
         <div>
-            <h1>Clientes
+            <h1>itemPedido
             </h1>
-            <a href= '/clientes/novo'>Cadastrar novo Cliente</a>
+            <a href= '/itemPedido/novo'>Cadastrar novo Item Pedido</a>
             <br/>
             <br/>
 
@@ -25,22 +25,22 @@ async function Clientes (){
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Senha</th>
+                        <th>Quantidade</th>
+                        <th>Preço por Unidade</th>
+                        <th>Sub-Total</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        cli.map(function (fill){
+                        IPed.map(function (fill){
                             return (
                                 <tr key = {fill.id}>
                                     <td>{fill.id}</td>
-                                    <td>{fill.Nome}</td>
-                                    <td>{fill.Email}</td>
-                                    <td>{fill.Senha}</td>
+                                    <td>{fill.Quantidade}</td>
+                                    <td>{fill.PrecoUnitario}</td>
+                                    <td>{fill.Subtotal}</td>
                                     <td>
-                                        <form action={removeCli}>
+                                        <form action={removeIP}>
                                             <input type="hidden" name="id" defaultValue={fill.id}/>
                                             <button nama= "excluir">&#10008;</button>
                                         </form>
@@ -59,4 +59,4 @@ async function Clientes (){
 
 }
 
-export default Clientes;
+export default itemPedido;

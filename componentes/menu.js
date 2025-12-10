@@ -13,6 +13,7 @@ export default function Menu() {
           <a href="/estoque">Estoque</a>
           <a href="/feedbacks">Feedback</a>
           <a href="/clientes">Cliente</a>
+          <a href="/pedido">Pedido</a>
         </div>
   
         {/* PESQUISA */}
